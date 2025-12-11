@@ -4,10 +4,7 @@ import { v4 as uuid } from "uuid";
 
 function ItemForm({onItemFormSubmit}) {
 
-  const [ newItem, setNewItem ] = useState({
-    name: "",
-    category: "Produce"
-  });
+  const [ newItem, setNewItem ] = useState({name: "", category: "Produce"});
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -21,7 +18,7 @@ function ItemForm({onItemFormSubmit}) {
         [e.target.name]: e.target.value
       };
     });
-  }
+  };
 
   return (
     <form className="NewItem" onSubmit={handleSubmit}>
