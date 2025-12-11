@@ -3,7 +3,6 @@ import { useState } from "react";
 import { v4 as uuid } from "uuid";
 
 function ItemForm({onItemFormSubmit}) {
-
   const [ newItem, setNewItem ] = useState({name: "", category: "Produce"});
 
   function handleSubmit(e) {
